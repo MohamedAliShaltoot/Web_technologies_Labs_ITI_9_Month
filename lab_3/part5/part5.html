@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>String Search Lab</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="container">
+      <h2>The string to search is:</h2>
+      <textarea id="mainString" rows="4">
+Hi all this the second day in java script course
+    </textarea
+      >
+
+      <div class="row">
+        <div style="flex: 2">
+          <label>Enter substring to search for</label>
+          <input type="text" id="subString" placeholder="a" />
+        </div>
+
+        <div style="flex: 1">
+          <label>At index</label>
+          <input type="number" id="startIndex" value="0" />
+        </div>
+
+        <div>
+          <button onclick="searchString()">Search</button>
+        </div>
+      </div>
+
+      <div class="results">
+        <label>First occurrence located at index</label>
+        <input type="text" id="firstOcc" readonly />
+
+        <label>Last occurrence located at index</label>
+        <input type="text" id="lastOcc" readonly />
+
+        <label>First occurrence from your index located at index</label>
+        <input type="text" id="firstFromIndex" readonly />
+
+        <label>Last occurrence before your index located at index</label>
+        <input type="text" id="lastBeforeIndex" readonly />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
