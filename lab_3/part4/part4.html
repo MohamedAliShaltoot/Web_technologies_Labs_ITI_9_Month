@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>String Split Lab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Enter a sentence to split into words</h2>
+
+      <input type="text" id="sentence" placeholder="Hello,welcome,good bye" />
+
+      <label>Split by:</label>
+      <input type="text" id="delimiter" placeholder="," maxlength="1" />
+
+      <button onclick="splitString()">Split</button>
+
+      <div class="result">
+        <h3>The sentence split into words is</h3>
+        <textarea id="output" readonly></textarea>
+      </div>
+
+      <div class="result">
+        <label>The first 10 characters of the input string are:</label>
+        <input type="text" id="firstTen" readonly />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

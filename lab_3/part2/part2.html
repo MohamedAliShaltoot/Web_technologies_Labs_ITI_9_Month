@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Display Assignment</title>
+</head>
+<body>
+
+    <script>
+       
+        var listStyle = prompt("Select a list style: 1 (bullet), 2 (numbered), 3 (lettered)");
+        if (listStyle == "1") {
+            document.write("<h2>Bullet List</h2>");
+            document.write("<ul>");
+            document.write("<li>List item 1</li>");
+            document.write("<li>List item 2</li>");
+            document.write("<li>List item 3</li>");
+            document.write("</ul>");
+            
+            document.write("Click refresh to choose again.");
+        } else if (listStyle == "2") {
+            document.write("<h2>Ordered List: Numbered</h2>");
+            document.write("<ol>");
+            document.write("<li>List item 1</li>");
+            document.write("<li>List item 2</li>");
+            document.write("<li>List item 3</li>");
+            document.write("</ol>");
+             document.write("Click refresh to choose again.");
+        } else if (listStyle == "3") {
+            document.write("<h2>Ordered List: Lettered</h2>");
+            document.write("<ol type='A'>");
+            document.write("<li>List item 1</li>");
+            document.write("<li>List item 2</li>");
+            document.write("<li>List item 3</li>");
+            document.write("</ol>");
+             document.write("Click refresh to choose again.");
+        } else {
+            document.write("<h2>Invalid input! Please reload the page and enter 1, 2, or 3.</h2>");
+        }
+    </script>
+
+</body>
+</html>
